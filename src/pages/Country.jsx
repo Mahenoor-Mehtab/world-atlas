@@ -34,13 +34,13 @@ const Country = () => {
 
   //! search && filter
 const searchCountry = (country)=>{
-  console.log(country)
+  // console.log(country)
   if(search) return country.name.common.toLowerCase().includes(search.toLowerCase())
     return true
 }
 
 const filterRegion= (country)=>{
-  console.log(filter)
+  // console.log(filter)
   if(filter === "all")  return country
     return country.region === filter
 }
